@@ -105,7 +105,7 @@ rsync_backup() {
 	    if rsync -avz -e ssh --delete "${EXCLUDE[@]}" "$SOURCE_DIR/" "$REMOTE_DIR" >> "$LOG_FILE" 2>&1; then
 		            success "Remote rsync successful" | tee -a "$LOG_FILE"
 			        else
-					        error "Remote rsync failed!" | tee -a "$LOG_FILE"
+					        error "Remote filed!" | tee -a "$LOG_FILE"
 						    fi
 }
 
