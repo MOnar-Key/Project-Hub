@@ -4,9 +4,7 @@ on:
   push:
     branches:
       - main
-    paths:
-      - "AWS/AWS-S3-CloudFront-CDN.Using-Terrafrom-Github/Action.project/terraform/**"
-
+  workflow_dispatch: 
 jobs:
   terraform:
     name: Terraform Apply
