@@ -18,39 +18,39 @@ jobs:
         
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Show repo structure
-        working-directory: .
-        run: |
-         pwd 
-         ls -la
-         ls -la AWS
-         find AWS -maxdepth 4 -type d
+    # - name: Show repo structure
+       # working-directory: .
+      #  run: |
+       #  pwd 
+       #  ls -la
+       #  ls -la AWS
+        # find AWS -maxdepth 4 -type d
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
           terraform_version: 1.6.6
-      - name: Debug network
-        run: |
-          echo "testing DNS.."
-          nslookup registry.terraform.io || true
-          echo " testing HTTPS.."
-          curl https://registory.terraform.io || true 
-          curl htpps://releases.hashicorp.com || true
+    #  - name: Debug network
+    #    run: |
+     #     echo "testing DNS.."
+      #    nslookup registry.terraform.io || true
+       #   echo " testing HTTPS.."
+        #  curl https://registory.terraform.io || true 
+         # curl htpps://releases.hashicorp.com || true
           
       - name: Terraform Init
-        working-directory: AWS/Project-03/terraform
+        #working-directory: AWS/Project-03/terraform
         run: terraform init 
         env:
          TF_REGISTRY_CLIENT_TIMEOUT: "30"
 
-      - name: Terraform Validate
-        working-directory: AWS/Project-03/terraform
-        run: terraform validate
+     # - name: Terraform Validate
+      #  working-directory: AWS/Project-03/terraform
+        #run: terraform validate
 
-      - name: Terraform Plan
-        working-directory: AWS/Project-03/terraform
-        run: terraform plan
+     # - name: Terraform Plan
+    #    working-directory: AWS/Project-03/terraform
+    #    run: terraform plan
 
       # Apply ONLY if you want auto-deploy
       - name: Terraform Apply
