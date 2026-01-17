@@ -35,10 +35,8 @@ jobs:
           echo "testing DNS.."
           nslookup registry.terraform.io || true
           echo " testing HTTPS.."
-          curl -I
-          https://registory.terraform.io || true 
-          curl -I
-          htpps://releases.hashicorp.com || true
+          curl https://registory.terraform.io || true 
+          curl htpps://releases.hashicorp.com || true
           
       - name: Terraform Init
         working-directory: AWS/Project-03/terraform
