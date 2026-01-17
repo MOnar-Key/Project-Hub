@@ -6,7 +6,7 @@ on:
     branches:
       - main
     paths:
-      - "AWS/**"
+      - "AWS/AWS-S3-CloudFront-CDN.Using-Terrafrom-Github"
 jobs:
   terraform:
     name: Terraform Apply 
