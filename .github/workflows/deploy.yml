@@ -27,6 +27,12 @@ jobs:
         
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Show repo structure
+        run: |
+         pwd 
+         ls -la
+         ls -la AWS
+         find AWS -maxdepth 4 -type d
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
