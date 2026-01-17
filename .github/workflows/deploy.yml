@@ -13,7 +13,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: /AWS/AWS-S3-CloudFront-CDN.Using-Terrafrom-Github/Action.project/terraform/
+        working-directory: /AWS/AWS-S3-CloudFront-CDN.Using-Terraform-Github/Action.project/terraform/
 
     steps:
       - name: Checkout repository
