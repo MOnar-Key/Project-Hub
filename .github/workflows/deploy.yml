@@ -13,7 +13,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: AWS/Project-03/terraform/
+        working-directory: AWS/Project-03/terraform
     steps:
       - name: Debug network
         run: |
@@ -34,22 +34,22 @@ jobs:
           terraform_version: 1.6.6
 
       - name: Terraform Init
-        working-directory: AWS/Project-03/terraform/
+        working-directory: AWS/Project-03/terraform
         run: terraform init 
         env:
          TF_REGISTRY_CLIENT_TIMEOUT: "30"
 
       - name: Terraform Validate
-        working-directory: AWS/Project-03/terraform/
+        working-directory: AWS/Project-03/terraform
         run: terraform validate
 
       - name: Terraform Plan
-        working-directory: AWS/Project-03/terraform/
+        working-directory: AWS/Project-03/terraform
         run: terraform plan
 
       # Apply ONLY if you want auto-deploy
       - name: Terraform Apply
-        working-directory: AWS/Project-03/terraform/
+        working-directory: AWS/Project-03/terraform
         run: terraform apply -auto-approve
 
      
