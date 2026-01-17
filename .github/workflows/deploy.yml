@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "AWS/AWS-S3-CloudFront-CDN.Using-Terraform-Github/terraform/**"
+      - "AWS/AWS-S3-CloudFront-CDN.Using-Terrafrom-Github/Action.project/terraform/**"
 
 jobs:
   terraform:
@@ -15,7 +15,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: AWS/AWS-S3-CloudFront-CDN.Using-Terraform-Github/terraform
+        working-directory: /AWS/AWS-S3-CloudFront-CDN.Using-Terrafrom-Github/Action.project/terraform/
 
     steps:
       - name: Checkout repository
