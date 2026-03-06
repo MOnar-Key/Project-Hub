@@ -3,9 +3,9 @@
 Production-Style AWS Serverless Architecture Project
 
 ![AWS](https://img.shields.io/badge/AWS-Serverless-orange)
-![Architecture] (https://img.shields.io/badge/Cloud-Architecture-blue)
-![Project] (https://img.shields.io/badge/Project-Cloud%20Engineering-green)
-![Status] (https://img.shields.io/badge/Status-Active-success)
+![Architecture](https://img.shields.io/badge/Cloud-Architecture-blue)
+![Project](https://img.shields.io/badge/Project-Cloud%20Engineering-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
 
 A cloud engineering project that demonstrates how modern backend systems
 are built using AWS Serverless Architecture.
