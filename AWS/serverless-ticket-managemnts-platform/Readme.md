@@ -10,9 +10,7 @@ Production-Style AWS Serverless Architecture Project
 A cloud engineering project that demonstrates how modern backend systems
 are built using AWS Serverless Architecture.
 
-</div>---
-
-🧭 Project Concept
+🧭 PROJECT CONCEPT
 
 Most real production systems evolve gradually.
 
@@ -25,9 +23,7 @@ They start with a simple architecture and progressively add:
 
 This repository demonstrates that engineering evolution step-by-step.
 
----
-
-🏗 System Architecture
+🏗 SYSTEM ARCHITECTURE
 
 <div align="center"><img src="architecture/v1-architecture.png" width="900"/></div>---
 
