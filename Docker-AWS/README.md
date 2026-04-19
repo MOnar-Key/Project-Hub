@@ -105,7 +105,7 @@ This setup provides **scalability, portability, and production-like deployment b
 ![Docker Setup](./Images/sevenpic.png)
 ---
 ## ECS Running Task ( Container Active )
-![Task Running](./Images/sevenpic.png)
+![Task Running](./Images/sixpic.png)
 ---
 
 ## Production Deployment on AWS ECS ( Fargate )
