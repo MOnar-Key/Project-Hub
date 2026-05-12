@@ -235,8 +235,8 @@ Want to run this project on your system? Follow the steps below 👇
 ###  1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/MOnar-Key/Project-Hub.git
+cd Docker-AWS
 ```
 
 ---
